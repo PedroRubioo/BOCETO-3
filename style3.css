@@ -1,0 +1,115 @@
+/* estilos.css */
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.formulario-busqueda {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+form input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.carrusel-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: white;
+    /* Añadimos un alto máximo y ocultamos el desbordamiento */
+    max-height: 400px; /* Ajusta el alto máximo según sea necesario */
+    overflow-y: hidden;
+}
+
+.carrusel {
+    display: flex;
+    transition: transform 0.3s ease; /* Añadimos una transición suave al movimiento */
+}
+
+.cuadricula-trabajos {
+    display: flex;
+    gap: 1rem;
+}
+
+.trabajo-item {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.trabajo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
